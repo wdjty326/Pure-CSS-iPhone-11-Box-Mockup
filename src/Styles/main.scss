@@ -1,0 +1,18 @@
+* {	box-sizing: border-box	}
+html, body {	width: 100%;	height: 100%;	margin: 0; }
+#app {	width: 100%;	height: 100%;	display: flex; justify-content: center; align-items: center; background: #f1f1f1;	}
+
+.box {
+	width: 210px;
+	height: 430px;
+	border-radius: 35px;
+	background: url(iphone_xr_coral_sku_header.png) 50% 50% no-repeat;
+	background-size: auto;
+	transform: perspective(500px) rotate(90deg) skew(25deg);
+	transition: .5s;
+
+	&:hover {
+		transform: perspective(500px) rotate(90deg) skew(25deg) translate(-50px, -50px);
+		box-shadow: -90px 75px 20px rgba(0, 0, 0, .3);
+	}
+}
